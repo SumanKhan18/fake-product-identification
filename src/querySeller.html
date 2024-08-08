@@ -1,85 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Fake Product Identification</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
     <style>
-        /* Additional styles */
-        .navbar-brand {
-            color: #c80ea0; /* Changed navbar color to purple */
-            font-size: 35px;
-            font-weight: bold;
-            text-decoration: none;
-            animation: fadeIn 2s ease forwards;
-        }
-
-        .navbar-brand span {
-            font-weight: normal;
-            color: #1da052; /* Changed span color to green */
-            font-size: 28px;
-        }
-
+        /* Animation for fadeIn effect */
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
-        /* Animation for the form */
-        .form-group {
-            animation: slideIn 2s ease forwards;
+        /* Animation for table row */
+        @keyframes slideInFromLeft {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
         }
 
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Additional styles for the button */
-        .btn-register {
-            background-color: #FFC107; /* Changed button background color to yellow */
-            color: #fff; /* Changed button text color to white */
-            font-weight: bold;
-            border: none;
-            animation: slideIn 2s ease forwards;
-        }
-
-        /* Additional styles for the table */
-        table {
-            border-collapse: collapse;
+        /* Styles for container-fluid */
+        .container-fluid {
             width: 100%;
-            animation: fadeIn 2s ease forwards;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: #2b7fd2; /* Light gray background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(10, 9, 9, 0.1); /* Box shadow */
+            animation: fadeIn 4s ease-in-out; /* Apply fadeIn animation */
         }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #4CAF50; /* Changed table header background color to green */
-            color: white;
+        /* Styles for row */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            background-color: #d22696; /* White background */
+            padding: 20px; /* Padding */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(37, 2, 2, 0.1); /* Box shadow */
+            animation: slideInFromLeft 4s ease-in-out; /* Apply slideInFromLeft animation */
         }
     </style>
 </head>
-
 <body>
 <section class="ftco-section">
     <div class="container-fluid px-md-5">
@@ -87,56 +54,58 @@
             <div class="col-md-8 order-md-last">
                 <div class="row">
                     <div class="col-md-6 text-center">
-                        <a class="navbar-brand" href="index.html">Fake Product Identification <span>through Blockchain</span></a>
+                        <a class="navbar-brand" href="index.html" style="font-size: 34px;">COUNTERFEIT DETECTION</a>
                     </div>
                     <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
                         <form action="#" class="searchform order-lg-last">
+                            <!-- Your form content -->
                         </form>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 d-flex">
                 <div class="social-media">
+                    <!-- Your social media links -->
                 </div>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars"></span> Menu
-            </button>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item "><a href="manufacturer.html" class="nav-link">Manufacturer</a></li>
-                    <li class="nav-item"><a href="seller.html" class="nav-link">Seller</a></li>
-                    <li class="nav-item"><a href="consumer.html" class="nav-link">Consumer</a></li>
-                </ul>
-            </div>
+</section>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item "><a href="manufacturer.html" class="nav-link">Manufacturer</a></li>
+                <li class="nav-item"><a href="seller.html" class="nav-link">Seller</a></li>
+                <li class="nav-item"><a href="consumer.html" class="nav-link">Consumer</a></li>
+            </ul>
         </div>
-    </nav>
-    <!-- END nav -->
+    </div>
+</nav>
+<!-- END nav -->
 
-    <section>
-        <div class="container">
-            <h2>Query Sellers</h2>
-            <div class="form-group">
-                <label for="manufacturerCode">Manufacturer Code</label>
-                <input type="text" class="form-control" id="manufacturerCode" placeholder="Enter manufacturer Code" name="manufacturerCode">
-            </div>
-            <button type="submit" class="btn btn-warning btn-register" id="register">Get Sellers</button>
+<section>
+    <br>
+    <div class="container">
+        <h2>Query Sellers</h2>
+        <div class="form-group">
+            <label for="manufacturerCode">Manufacturer Code</label>
+            <input type="text" class="form-control" id="manufacturerCode" placeholder="Enter manufacturer Code" name="manufacturerCode">
         </div>
-    </section>
-
+        <button type="submit" class="btn btn-warning btn-register" id="register">Get Sellers</button>
+    </div>
 </section>
 
 <section>
+    <br>
     <div class="container">
         <h2>Sellers</h2>
         <p>Following are the sellers registered through Blockchain Network</p>
-        <table>
+        <table class="table">
             <thead>
             <tr>
                 <th>ID</th>
@@ -148,7 +117,9 @@
                 <th>Address</th>
             </tr>
             </thead>
-            <tbody id="logdata"></tbody>
+            <tbody id="logdata">
+            <!-- Table content will be dynamically added -->
+            </tbody>
         </table>
         <center><p>Your address is <b id="add"></b></p></center>
     </div>

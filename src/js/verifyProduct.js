@@ -8,9 +8,9 @@ App = {
 
     initWeb3: function() {
         if(window.web3) {
-            App.web3Provider=window.web3.currentProvider;
+            App.web3Provider = window.web3.currentProvider;
         } else {
-            App.web3Provider=new Web3.proviers.HttpProvider('http://localhost:7545');
+            App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
         }
 
         web3 = new Web3(App.web3Provider);
@@ -19,10 +19,10 @@ App = {
 
     initContract: function() {
 
-        $.getJSON('product.json',function(data){
+        $.getJSON('product.json', function(data){
 
-            var productArtifact=data;
-            App.contracts.product=TruffleContract(productArtifact);
+            var productArtifact = data;
+            App.contracts.product = TruffleContract(productArtifact);
             App.contracts.product.setProvider(App.web3Provider);
         });
 
@@ -31,45 +31,45 @@ App = {
 
     bindEvents: function() {
 
-        $(document).on('click','.btn-register',App.getData);
+        $(document).on('click', '.btn-register', App.getData);
     },
 
-    getData:function(event) {
+    getData: function(event) {
         event.preventDefault();
         var productSN = document.getElementById('productSN').value;
         var consumerCode = document.getElementById('consumerCode').value;
         var productInstance;
         //window.ethereum.enable();
-        web3.eth.getAccounts(function(error,accounts){
+        web3.eth.getAccounts(function(error, accounts){
 
             if(error) {
                 console.log(error);
             }
 
-            var account=accounts[0];
+            var account = accounts[0];
             // console.log(account);
             App.contracts.product.deployed().then(function(instance){
 
-                productInstance=instance;
-                return productInstance.verifyProduct(web3.fromAscii(productSN), web3.fromAscii(consumerCode),{from:account});
+                productInstance = instance;
+                return productInstance.verifyProduct(web3.utils.fromAscii(productSN), web3.utils.fromAscii(consumerCode), {from: account});
 
             }).then(function(result){
                 
                 // console.log(result);
 
-                var t= "";
+                var t = "";
 
-                var tr="<tr>";
-                if(result){
-                    tr+="<td>"+ "Genuine Product."+"</td>";
-                }else{
-                    tr+="<td>"+ "Fake Product."+"</td>";
+                var tr = "<tr>";
+                if(result) {
+                    tr += "<td>" + "Genuine Product." + "</td>";
+                } else {
+                    tr += "<td>" + "Fake Product." + "</td>";
                 }
-                tr+="</tr>";
-                t+=tr;
+                tr += "</tr>";
+                t += tr;
 
                 document.getElementById('logdata').innerHTML = t;
-                document.getElementById('add').innerHTML=account;
+                document.getElementById('add').innerHTML = account;
            }).catch(function(err){
                console.log(err.message);
            })

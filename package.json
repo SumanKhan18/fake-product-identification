@@ -12,8 +12,10 @@
     "lite-server": "2.6"
   },
   "dependencies": {
+    "@remix-project/remixd": "^0.6.29",
     "@truffle/hdwallet-provider": "^2.0.15",
     "cors": "^2.8.5",
+    "ganache": "^7.9.2",
     "web3": "^1.7.4"
   }
 }

@@ -1,79 +1,112 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  	<title>Fake Product Identification</title>
+<head>
+    <title>Fake Product Identification</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Add color and animation to navbar */
+        .navbar {
+            background-color: #33332b; /* Dark gray background color */
+        }
 
-	</head>
-	<body>
-	<section class="ftco-section">
-		<div class="container-fluid px-md-5">
-			<div class="row justify-content-between">
-				<div class="col-md-8 order-md-last">
-					<div class="row">
-						<div class="col-md-6 text-center">
-							<a class="navbar-brand" href="index.html">Fake Product Identification <span>through Blockchain</span></a>
-						</div>
-						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
-							<form action="#" class="searchform order-lg-last">
-			          
-			        </form>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex">
-					<div class="social-media">
-		    		
-	        </div>
-				</div>
-			</div>
-		</div>
-		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container-fluid">
-	    
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="fa fa-bars"></span> Menu
-	      </button>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="addProduct.html" class="nav-link">Add Product</a></li>
-				<li class="nav-item "><a href="addSeller.html" class="nav-link">Add Seller</a></li>
+        .navbar-nav .nav-link {
+            color: #eee1e1 !important; /* White text color for navbar links */
+        }
 
-	          	<li class="nav-item"><a href="sellProductManufacturer.html" class="nav-link">Sell Product To Seller</a></li>
-				  <li class="nav-item"><a href="querySeller.html" class="nav-link">Query Seller</a></li>
+        .navbar-nav .nav-link:hover {
+            color: #5ae4fc !important; /* Yellow text color on hover */
+        }
 
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+        /* Add color to headings */
+        h2 {
+            color: #007bff; /* Blue color for h2 headings */
+        }
+
+        h3 {
+            color: #28a745; /* Green color for h3 headings */
+        }
+
+        /* Add animation to headings */
+        h2,
+        h3 {
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        /* Define keyframes for fadeInUp animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="ftco-section"  style="background-color: rgba(24, 63, 155, 0.18);">
+    
+    <div class="container-fluid px-md-5" style="background-color: rgb(234, 121, 196);">
+        
+        <div class="row justify-content-between">
+            <div class="col-md-8 order-md-last">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <a class="navbar-brand" href="index.html" style="font-size: 34px;">COUNTERFEIT DETECTION</a>
+                    </div>
+                    <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
+                        <form action="#" class="searchform order-lg-last">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="social-media">
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="addProduct.html" class="nav-link">Add Product</a></li>
+                    <li class="nav-item "><a href="addSeller.html" class="nav-link">Add Seller</a></li>
+                    <li class="nav-item"><a href="sellProductManufacturer.html" class="nav-link">Sell Product To Seller</a></li>
+                    <li class="nav-item"><a href="querySeller.html" class="nav-link">Query Seller</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- END nav -->
+</section>
 
-	</section>
+<section>
+    <div class="container">
+        <h2>
+            Manufacturer
+        </h2>
+        <h3 style="color: rgb(13, 8, 5);">
+            "Welcome, manufacturer! As you add sellers, you're not just distributing products, you're building partnerships. Use the navigation bar to empower them with access to a world of innovation. Together, let's navigate towards mutual growth and success!"
+        </h3>
+    </div>
+</section>
 
-	<section>
-		<div class="container">
-		  <h2>
-			Manufacturer
-		  </h2>
-		  <h3>
-			Go to navigation bar to perform operations.
-		  </h3>
-	  </section>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/web3.min.js"></script>
-	<script src="js/truffle-contract.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
 </body>
 </html>
-
-
-
-
