@@ -34,7 +34,7 @@ Ensure you have the following installed:
 1. *Clone the Repository*
 
     bash
-    git clone https://github.com/yourusername/fake-product-identification-aptos.git
+    git clone [https://github.com/yourusername/fake-product-identification-aptos.git](https://github.com/SumanKhan18/fake-product-identification)
     cd fake-product-identification-aptos
     
 
@@ -126,4 +126,4 @@ For any questions or suggestions, please contact [TEAM SPAM BYTES](sumankhan2909
 
 ---
 
-This README provides a comprehensive guide for users and contributors to understand and engage with your project effectively. Adjust the content as needed to fit the specifics of your project.
+
