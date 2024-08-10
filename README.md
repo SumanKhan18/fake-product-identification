@@ -122,7 +122,7 @@ We welcome contributions from the community. To contribute, please:
 
 ## Contact
 
-For any questions or suggestions, please contact [TEAM SPAM BYTES](sumankhan2909@gmail.com).
+For any questions or suggestions, please contact  [TEAM SPAM BYTES] [sumankhan2909@gmail.com ](sumankhan2909@gmail.com).
 
 ---
 
