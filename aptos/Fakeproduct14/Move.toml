@@ -1,10 +1,10 @@
 [package]
-name = "fake_product_identification"
+name = "ProductManagement"
 version = "1.0.0"
 authors = []
 
 [addresses]
-fake_product_identification = '0x9b2c7263883399c64ab0f4890b50383253f188e7b01a7a4d668e40134a296e02'
+ProductManagement = '0x9b2c7263883399c64ab0f4890b50383253f188e7b01a7a4d668e40134a296e02'
 [dev-addresses]
 
 [dependencies.AptosFramework]
